@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TableProduct, TableClient } from './components/index';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    TableProduct,
+    TableClient
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'ang';
+  headers = [
+    { label:'ID', key:'id' },
+    { label:'Name', key:'name' },
+    { label:'Description', key:'description' }
+  ]
+  items = [
+    { id:1, name:'Octavio', description:'Programador'},
+    { id:2, name:'Javier', description:'Programador' }
+  ]
 }
