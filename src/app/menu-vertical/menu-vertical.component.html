@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let item of items">
+        <a [routerLink]="item.path" class="text-white cursor-pointer">{{ item.label }}</a>
+    </li>
+</ul>
