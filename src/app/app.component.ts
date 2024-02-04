@@ -15,13 +15,5 @@ import { TableProduct, TableClient } from './components/index';
 })
 export class AppComponent {
   title = 'ang';
-  headers = [
-    { label:'ID', key:'id' },
-    { label:'Name', key:'name' },
-    { label:'Description', key:'description' }
-  ]
-  items = [
-    { id:1, name:'Octavio', description:'Programador'},
-    { id:2, name:'Javier', description:'Programador' }
-  ]
+
 }

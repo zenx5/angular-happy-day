@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from '../../user.service';
+import { UserService } from '../../services/user.service';
 import { TableGeneralComponent } from '../table-general/table-general.component';
 
 @Component({
@@ -26,6 +26,11 @@ export class TableClientComponent {
     clients.get().then( data => {
       this.items = data
     } )
+  }
+
+  handlerEdit(id:number|string) {
+    console.log(id)
+
   }
 
 }

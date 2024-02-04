@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { MenuVerticalComponent } from '../components/menu-vertical/menu-vertical.component';
+import { MenuVertical } from '../components';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,7 @@ import { MenuVerticalComponent } from '../components/menu-vertical/menu-vertical
   imports: [
     RouterOutlet,
     RouterLink,
-    MenuVerticalComponent
+    MenuVertical
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'

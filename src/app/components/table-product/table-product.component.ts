@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TableGeneralComponent } from '../table-general/table-general.component';
-import { ProductService } from '../../product.service';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'table-product',

@@ -1,1 +1,8 @@
-<table-general [headers]="headers" [items]="items"></table-general>
+<table-general
+    [headers]="headers"
+    [items]="items"
+    [isEditable]="true"
+    [isDeletable]="true"
+    (onEdit)="handlerEdit($event)"
+    (onDelete)="handlerEdit($event)"
+    />
